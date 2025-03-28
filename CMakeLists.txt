@@ -4,6 +4,8 @@ project(multiplayer-fps)
 
 set(CMAKE_CXX_STANDARD 17)
 
+add_subdirectory(SFML)
+
 find_package(SFML 3.0 REQUIRED Graphics Network)
 
 add_executable(client client.cpp)
