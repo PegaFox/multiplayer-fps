@@ -6,7 +6,9 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_subdirectory(SFML)
 
-find_package(SFML 3.0 REQUIRED Graphics Network)
+#find_package(SFML 3.0 REQUIRED Graphics Network)
+
+include_directories(glm)
 
 add_executable(client client.cpp)
 
